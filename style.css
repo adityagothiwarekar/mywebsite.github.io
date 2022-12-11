@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.bg-image{
+    background-image: url(https://3.bp.blogspot.com/-CBkeyJkASJY/XFUltC8eOEI/AAAAAAAABz0/Dlf9jd3RMPQKSz_G63SgYDiC53NmYNdywCKgBGAs/w0/night-sky-stars-scenery-landscape-21-4K.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.blureffect{
+    background: rgba(240,227,227,0.5);
+    backdrop-filter: blur(15px);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}

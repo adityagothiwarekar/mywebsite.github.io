@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<head>
+    <title>My webpage</title>>
+    
+</head>
+<body>
+    <section>
+    <div class="container">
+        <div class="text">
+            <h2 style="text-align: center;"> Hey , would you like to join
+            the csi<p><div class="t1">web development🕷️🕸️</div>team?</p>
+            <div class="new-text">
+            <h1><p>we are glad you are here !!!</p></h1>
+            </div>
+            </h2S>
+        </div>
+       
+            <button type="button" class="btn">view tutorial</button>
+            <button type="button" class="btn-2" onclick="sayhello()">random colors 🎨</button>
+            
+          
+        
+    </div>
+    <div class="popup" id="message">AAJ KAMAYENGA TOH KAL KHAAYENGA</div>
+    </section>
+    <script > const divcontainer=document.querySelector('#message');
+        let isClicked = true;
+        function sayhello(){
+            if(isClicked)
+            {
+            divcontainer.style.display='inline';
+            isClicked = false;
+            }else{
+                divcontainer.style.display='none';
+                isClicked = true;
+            }
+        }</script>
+    
+    <style>
+        :root{
+            --clr-neon :hsl(317 100% 54%);
+            --clr-bg: hsl(321 21% 16%);
+            --background-color:#005aff;
+            --background-color-dark: #002d81 ;
+
+        }
+        
+
+
+        
+        body{
+            justify-content: center;
+            align-items: center;
+            background-image: url(2.webp);
+            background-size: cover;
+            background-position: cover;
+            
+            display: flex;
+           justify-content: center;
+           align-items: center;
+            
+            
+        }
+        section{
+            
+            height: 90vh;
+            display: flex;
+           justify-content: center;
+           align-items: center;
+
+        }
+        .container{
+            height:10vh;
+            width: 480px;
+            height: 480px;
+            margin: top 40px;;
+           background: rgba(0, 0, 0, 0.2);
+           backdrop-filter: blur(10px);
+            color: darkblue;
+            font-size :20px;
+            justify-content: center;
+            align-items: center;
+           border-radius: 16px;
+           box-shadow:0px 0px 16px 16px  rgba(0, 0, 0, 0.5);
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translateX(-50%)translateY(-50%);
+           
+
+        }
+        .text{
+            position: relative;
+           top: 50%;
+           left: 50%;
+           transform: translateX(-50%)translateY(-50%);
+
+        }
+        .new-text{
+            font-size: 10px;
+            top: 10%;
+            left: 10%;       
+
+        }
+         .btn{
+            position: fixed;
+            top: 80%;
+            left: 10%;
+            color: darkblue;
+            font-size :20px;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            cursor: pointer;
+            color: var(--clr-neon);
+            border: var(--clr-neon) 5px solid;
+            padding: 0.25cm 1cm;
+            border-radius: 16px;
+            background: transparent;
+            box-shadow: var(--clr-neon);
+            text-shadow:  0 0 0.125em var(--clr-neon);
+            box-shadow: 0 0 1em var(--clr-neon);
+
+         }
+         .btn:hover,.btn:focus{
+            background: var(--clr-neon);
+            color: var(--clr-bg);
+            text-shadow: none;
+
+         }
+         .btn-2{
+            position: fixed;
+            top: 80%;
+            left: 50%;
+            color: #93FFE8 ;
+;
+            font-size :20px;
+            justify-content: center;
+            align-items: center;
+            display: inline-block;
+            margin : 0 8px;
+            padding: 10px 16px;
+            font-size: 20;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background-color: var(--background-color);
+            box-shadow: 6px 6px 0 var(--background-color-dark);
+
+
+
+
+
+         }
+         .btn-2:active{
+            transform: translateX(2px) translatY(2px);
+            box-shadow: 4px 4px 0 var(--background-color-dark);
+         }
+         .t1{
+            background: linear-gradient(to right, #f32170,
+                    #ff6b08, #cf23cf, #eedd44);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+           
+            
+         }
+         .popup{
+            font-size :20px;
+            justify-content: center;
+            align-items: center;
+            display: inline-block;
+            position: fixed;
+            width: 200px;
+            height: 200px;
+            top: 90%;
+            text-shadow:  0 0 0.125em var(--clr-neon);
+
+           backdrop-filter: blur(10px);
+            color: red;
+            display: none;
+         }
+        
+           
+
+        
+    </style>
+</body>
+</html>
